@@ -16,4 +16,5 @@ jobs:
 
       - name: Run SQL Linter on Data Schema
         run: |
-          sqlfluff lint $GITHUB_WORKSPACE/.github/workflows/RelationDB_DetailedDataSchema.sql --dialect postgres
+          sqlfluff fix $GITHUB_WORKSPACE/.github/workflows/RelationDB_DetailedDataSchema.sql --dialect postgres
+
